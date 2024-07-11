@@ -1,0 +1,78 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Teclado Gamer Semi Mecânico Multimídia Led",
+      "urlImagem": "https://m.media-amazon.com/images/I/616Lyy60cTL._AC_SX679_.jpg",
+      "preco": "39.90",
+      "urlProduto": "https://www.amazon.com.br/Teclado-Mec%C3%A2nico-Multim%C3%ADdia-Antighosting-Notebook/dp/B09JPDJ956/ref=asc_df_B09JPDJ956/?tag=googleshopp00-20&linkCode=df0&hvadid=379713309507&hvpos=&hvnetw=g&hvrand=9779467037279541639&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001625&hvtargid=pla-1487589567728&psc=1&mcid=f6dbea3b0fb53e5da125722c37d14618"
+    },
+    {
+      "id": "2",
+      "nome": "Headset Gamer Redragon Zeus X",
+      "urlImagem": "https://images.kabum.com.br/produtos/fotos/227818/headset-gamer-redragon-zeus-chroma-mk-ii-rgb-surround-7-1-usb-drivers-53mm-preto-vermelho-h510-rgb_1631555309_m.jpg",
+      "preco": "249.00",
+      "urlProduto": "https://www.kabum.com.br/produto/227818/headset-gamer-redragon-zeus-x-chroma-mk-ii-rgb-surround-7-1-usb-drivers-53mm-preto-vermelho-h510-rgb"
+    },
+    {
+      "id": "3",
+      "nome": "CADEIRA GAMER TGT HERON TC, PRETO E VERMELHO",
+      "urlImagem": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/t/g/tgt-hrtc-br026.jpg",
+      "preco": "439.99",
+      "urlProduto": "https://www.pichau.com.br/cadeira-gamer-tgt-heron-tc-preto-e-vermelho-tgt-hrtc-br02?gad_source=1&gclid=EAIaIQobChMIwu_w0PaZhwMV00FIAB1IOQ2XEAQYASABEgIgbvD_BwE"
+    },
+    {
+      "id": "4",
+      "nome": "MONITOR GAMER GALAX HOF LITE STELLAR II",
+      "urlImagem": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/h/f/hfls31165b4164120.jpg",
+      "preco": "2.049,99",
+      "urlProduto": "https://www.pichau.com.br/monitor-gamer-galax-hof-lite-stellar-ii-31-5-pol-ips-4k-uhd-1ms-165hz-hdmi-dp-hfls31165b4"
+    },
+    {
+      "id": "950a",
+      "nome": "MICROFONE CONDENSADOR DAZZ X PRO, RGB, USB, PRETO",
+      "preco": "239,99",
+      "urlImagem": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/6/2/620001103.jpg",
+      "urlProduto": "https://www.pichau.com.br/microfone-condensador-dazz-x-pro-rgb-usb-preto-62000110"
+    },
+    {
+      "id": "4b59",
+      "nome": "WEBCAM LOGITECH BRIO 300, FHD 1080P, USB-C, PRETO",
+      "preco": "319,99",
+      "urlImagem": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/9/6/960-0014132.jpg",
+      "urlProduto": "https://www.pichau.com.br/webcam-logitech-brio-300-fhd-1080p-usb-c-preto-960-001413"
+    },
+    {
+      "id": "b036",
+      "nome": "MOUSEPAD PCYES CHICKEN",
+      "preco": "39,99",
+      "urlImagem": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/p/m/pmch50x40.jpg",
+      "urlProduto": "https://www.pichau.com.br/mousepad-pcyes-chicken-500x400x3mm-pmch50x40"
+    },
+    {
+      "id": "f0fd",
+      "nome": "IMPRESSORA BROTHER DCP-B7520DW, MULTIFUNCIONAL",
+      "preco": "1.799,99",
+      "urlImagem": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/d/c/dcp-b7520dw552.jpg",
+      "urlProduto": "https://www.pichau.com.br/impressora-brother-dcp-b7520dw-multifuncional-laser-monocromatico-127v-dcp-b7520dw"
+    },
+    {
+      "id": "0438",
+      "nome": "TV LED Smart 58\" Philco PTV58GAGSKSBL UHD 4k Android TV Wi-Fi 3 HDMI 2 USB Prata Bivolt",
+      "preco": "2.359,00",
+      "urlImagem": "https://lojasimperio-s3.s3.amazonaws.com/lojasimp/assets/products-images/268eddab-2e4c-4bfe-88fb-cbb8babd3b23.webp"
+    },
+    {
+      "id": "592d",
+      "nome": "MOUSEPAD PCYES CHICKEN",
+      "preco": "39,99",
+      "urlImagem": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/p/m/pmch50x40.jpg"
+    },
+    {
+      "id": "4cac",
+      "nome": "MICROFONE CONDENSADOR DAZZ X PRO, RGB, USB, PRETO",
+      "preco": "239,99",
+      "urlImagem": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/6/2/620001103.jpg"
+    }
+  ]
+}

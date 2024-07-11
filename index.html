@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="./javascript/produtoAPI.js" defer type="module"></script>
+    <script src="./javascript/exibirProdutos.js" defer type="module"></script>
+    <script src="./javascript/adicionarProduto.js" defer type="module"></script>
+    <script src="./javascript/alerta.js" defer></script>
+    <title>DesejoItens</title>
+</head>
+<body>
+    <header>
+        <div class="logoGeral">
+            <img src="./imagens/package (2).svg" alt="package">
+            <h1><span class="primeiroNome">Desejo</span><span class="segundoNome">Itens</span></h1>
+        </div>
+        <!-- <button id="alertButton">Mostrar Alerta</button> -->
+    </header>
+
+    <main>
+        <section class="secaoProdutos">
+            <h1 class="tituloProdutos">Meus Produtos:</h1>
+            <div class="conjuntoCards" data-lista> 
+                
+            </div>  
+        </section>
+
+        <section class="secaoAdicionarNovo">
+            <h1>Adicionar novo Desejo:</h1>
+            <form data-formulario>
+                <input class="input" type="text" name="nome" required id="nome" placeholder="Nome..." data-nome>
+                <input class="input" type="text" name="preco" required id="preco" placeholder="Preço..." data-preco>
+                <input class="input" type="url" name="urlImagem" required id="urlImagem" placeholder="Url da Imagem..." data-urlImagem>
+                <input class="input" type="url" name="urlProduto" required id="urlProduto" placeholder="Url do site" data-urlProduto>
+                <div class="botoes">
+                    <input class="botaoEnviar" type="submit" value="Enviar">
+                    <button class="botaoLimpar" value="Limpar">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <div id="alert" class="alert-hidden">Produto Cadastrado com Sucesso!</div>
+
+    <footer>
+        <div class="logoGeral">
+            <img width="20" height="20" src="./imagens/package (2).svg" alt="package">
+            <h3><span class="primeiroNome">Desejo</span><span class="segundoNome">Itens</span></h3>
+        </div>
+        <div class="textos">
+            <p>Desenvolvido por Hugo Nascimento</p>
+            <p>2024</p>
+        </div>  
+    </footer>
+</body>
+</html>
