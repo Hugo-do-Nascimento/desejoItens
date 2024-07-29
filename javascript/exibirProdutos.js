@@ -2,14 +2,14 @@ import { produtoAPI } from "./produtoAPI.js";
 
 const lista = document.querySelector("[data-lista]");
 
-export function constroiCard(nome, urlImagem, preco, urlProduto, id) {
+export function constroiCard(nome, url_imagem, preco, url_produto, id) {
     const card = document.createElement("div");
     
     card.className = "card";
     card.innerHTML = 
         `
-            <img class="imagemCard" src="${urlImagem}" alt="Produto">
-            <p class="nomeProduto" data-urlProduto="${urlProduto}">${nome}</p>
+            <img class="imagemCard" src="${url_imagem}" alt="Produto">
+            <p class="nomeProduto" data-urlProduto="${url_produto}">${nome}</p>
             <div class="footerCard">
                 <p class="preco">R$<span class="valor">${preco}</span></p>
                 <img class="iconeLixeira" src="/imagens/trash-2.svg" alt="Icone - Lixeira" data-id="${id}">
@@ -17,8 +17,8 @@ export function constroiCard(nome, urlImagem, preco, urlProduto, id) {
         `
 
     card.querySelector(".nomeProduto").addEventListener("click", () => {
-        console.log(urlProduto);
-        window.location.href = urlProduto;
+        console.log(url_produto);
+        window.location.href = url_produto;
     });
 
     card.querySelector(".iconeLixeira").addEventListener("click", async (evento) => {
@@ -30,17 +30,18 @@ export function constroiCard(nome, urlImagem, preco, urlProduto, id) {
     return card;   
 }
 
-async function listaProdutos() {
+export async function listaProdutos() {
     try {
         const listaProdutosAPI = await produtoAPI.getProducts();
+        lista.innerHTML = '';
         console.log("Produtos sendo carregados :", listaProdutosAPI);
 
-        listaProdutosAPI.forEach(elemento => lista.appendChild(
+        listaProdutosAPI.results.forEach(elemento => lista.appendChild(
             constroiCard(
                 elemento.nome,
-                elemento.urlImagem,
+                elemento.url_imagem,
                 elemento.preco,
-                elemento.urlProduto,
+                elemento.url_produto,
                 elemento.id
             )));
     } catch (error) {
@@ -49,7 +50,7 @@ async function listaProdutos() {
     }
 }
 
-listaProdutos();
+document.addEventListener("DOMContentLoaded", listaProdutos);
 
 
 

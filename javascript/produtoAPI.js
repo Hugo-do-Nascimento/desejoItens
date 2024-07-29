@@ -1,50 +1,61 @@
-const urlApi = "http://localhost:3000/produtos";
+// import axios from "axios";
 
-async function getProducts() {
+const getProducts = async () => {
     try {
-        const response = await fetch(urlApi);
-        if (!response.ok) {
+        const response = await axios({
+            method: "GET",
+            url: "https://api.baserow.io/api/database/rows/table/330431/?user_field_names=true",
+            headers: {
+                Authorization: "Token mKMdr4cx6AfkNxUE1OyU5oWscOBJFJMy"
+            }
+        });
+        if (response.status !== 200) {
             throw new Error("Erro ao buscar produtos")
         }
-        const products = await response.json();
         
-        return products;
+        return response.data;
 
     } catch (error) {
-        console.error('Erro ao buscar por produtos:', error)
+        console.error('Erro ao buscar por produtos:', error);
+        return [];
     }
     
 }
 
-async function postProduct(nome, urlImagem, preco, urlProduto) {
-    const response = await fetch(urlApi, {
+async function postProduct(nome, url_imagem, preco, url_produto) {
+    const response = await axios({
         method: "POST",
+        url: "https://api.baserow.io/api/database/rows/table/330431/?user_field_names=true",
         headers: {
+            Authorization: "Token mKMdr4cx6AfkNxUE1OyU5oWscOBJFJMy",
             "content-type": "application/json"
         },
-        body: JSON.stringify({
+        data: JSON.stringify({
             nome: nome,
             preco: preco,
-            urlImagem: urlImagem,
-            urlProduto: urlProduto
+            url_imagem: url_imagem,
+            url_produto: url_produto
         })
     });
 
-    if (!response.ok) {
+    if (response.status !== 201) {
         throw new Error("Não foi possível adicionar o produto");
     }
 
-    const products = await response.json();
-    return products;
+    return response.data;
 }
 
 async function deleteProduct(id) {
     try {
-        const response = await fetch(`http://localhost:3000/produtos/${id}`, {
-            method: 'DELETE'
+        const response = await axios({
+            method: "DELETE",
+            url: `https://api.baserow.io/api/database/rows/table/330431/${id}/`,
+            headers: {
+                Authorization: "Token mKMdr4cx6AfkNxUE1OyU5oWscOBJFJMy"
+            }
         });
 
-        if(!response.ok) {
+        if(response.status !== 204) {
             throw new Error('Erro ao deletar produto');
         }
 
